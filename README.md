@@ -1,4 +1,5 @@
-my_vimrc
-========
+Personal VIMRC File
+===================
+Simple storage for my .vimrc and future updates.
 
-A simple .vimrc
+Thanks: http://www.youtube.com/watch?NR=1&v=YhqsjUUHj6g
