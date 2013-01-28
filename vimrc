@@ -50,6 +50,8 @@ set expandtab
 " set noswapfile
 
 " Common Editor Shortcuts
+nnoremap ; :
+
 "" Undo
 noremap  <C-Z> :undo<CR>
 inoremap <C-Z> :undo<CR>
@@ -114,9 +116,45 @@ map <C-l> <C-w>l
 " Sort Functions to a key when press '\'s
 vnoremap <Leader>s :sort<CR>
 
+" Toggle invisible
+noremap <Leader>i :set list!<CR>
+
 " Easier moving of code blocks
 vnoremap < <gv
 vnoremap > >gv
+
+
+" from https://github.com/eiro/rcfiles/
+
+noremap! "" ""<left>
+noremap! '' ''<left>
+
+noremap! (( ()<left>
+noremap! (<cr> (<cr>)<c-o>O
+noremap! (; ();<esc>hi
+noremap! (<cr>; (<cr>);<c-o>O
+noremap! ('; ('');<esc>hhi
+noremap! ("; ("");<esc>hhi
+noremap! (' ('')<esc>hi
+noremap! (" ("")<esc>hi
+
+noremap! {{ {}<left>
+noremap! {<cr> {<cr>}<c-o>O
+noremap! {; {};<esc>hi
+noremap! {<cr>; {<cr>};<c-o>O
+noremap! {'; {''};<esc>hhi
+noremap! {"; {""};<esc>hhi
+noremap! {' {''}<esc>hi
+noremap! {" {""}<esc>hi
+
+noremap! [[ []<left>
+noremap! [<cr> [<cr>]<c-o>O
+noremap! [; [];<esc>hi
+noremap! [<cr>; [<cr>];<c-o>O
+noremap! ['; [''];<esc>hhi
+noremap! ["; [""];<esc>hhi
+noremap! [' ['']<esc>hi
+noremap! [" [""]<esc>hi
 
 " Show WhiteSpaces
 autocmd InsertLeave * match ExtraWhitespace /\s\+$/
